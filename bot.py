@@ -7,11 +7,11 @@ from pyrogram.types import (
     InlineKeyboardMarkup
 )
 
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("6386155154:AAH_Fp0JrPwuPNuFB_FtSYnsTFL6KLQZGPA", "")
 
-API_ID = int(os.environ.get("API_ID", 12345))
+API_ID = int(os.environ.get("23163380", 12345))
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("2dca155e786c7db2d295e5b4ab10783b", "")
 
 app = Client(
         "webscrap",
@@ -26,8 +26,8 @@ def start(client, message):
             message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n **Iam Simple web scraper** 🕸 \n __SEND ME WEBSITE LINK AND GET THAT WEB SOURCE__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],
-                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]          ]        ) )
+                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/Medicoarmy") ],
+                 [InlineKeyboardButton("Subscribe 🧐", url="https://www.youtube.com/channel/UCc1xilj5m7VY7koOYVNXXFA") ]          ]        ) )
 
 
 @app.on_message(filters.regex("^(http|https|www\.)"))
